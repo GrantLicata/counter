@@ -1,0 +1,54 @@
+.main_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button_wrapper {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#number {
+    font-size: 18pt;
+    font-weight: 600;
+    border: 2px solid rgba(0, 0, 0, 0.225);
+    padding: 10px 30px 10px 30px;
+    background-color: rgba(173, 216, 230, 0.574);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.increment_button {
+    background-color: rgba(22, 220, 22, 0.604);
+    font-weight: 500;
+    padding: 5px 10px 5px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.reset_button {
+    background-color: rgba(229, 62, 62, 0.501);
+    font-weight: 500;
+    padding: 5px 10px 5px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.double_increment {
+    background-color: rgba(62, 165, 229, 0.501);
+    font-weight: 500;
+    padding: 5px 10px 5px 10px;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32pt;
+}
+
+.input_increment {
+    padding: 5px 10px 5px 10px;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}

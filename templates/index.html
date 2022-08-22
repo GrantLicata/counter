@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Counter</title>
+</head>
+
+<body>
+    <div class="main_wrapper">
+        <h1>Counter</h1>
+        <p id="number">{{ session['site_visit_count'] }}</p>
+        <div class="button_wrapper" class="increment_button">
+            <a href="/" class="increment_button">Increment</a>
+            <a href="/reset" class="reset_button">Reset</a>
+        </div>
+        <a href="/double" class="double_increment">Increment x 2</a>
+        <form action="/input" method="post" class="input_increment">
+            <label for="input_increment">Enter incremement value: </label>
+            <input type="text" name="input_increment">
+            <button type="submit">Submit</button>
+        </form>
+        
+    </div>
+</body>
+</html>
