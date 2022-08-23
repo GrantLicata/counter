@@ -19,7 +19,7 @@ def reset():
     session.clear()
     return redirect('/')
 
-@app.route('/double')
+@app.route('/add_two')
 #Allows for additional increment to be added. Forming a double.
 def double():
     session['site_visit_count'] += 1
@@ -28,7 +28,7 @@ def double():
 @app.route('/input', methods=['POST'])
 #Allows the user to enter a specific increment via a form.
 def user_input_counter():
-    session['site_visit_count'] += int(request.form['input_increment'])
+    session['site_visit_count'] += int(request.form['input_increment']) - 1
     print(request.form)
     return redirect('/')
 
